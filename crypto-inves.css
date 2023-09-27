@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color: #ddd;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow-x: hidden;
 }
 .topnav {
   overflow: hidden;
@@ -14,20 +15,17 @@ body {
   padding: 14px 16px;
   text-align: center;
 }
-.topnav a:hover {
+.topnav a:hover:not(:first-child) {
   background-color: #ddd;
   color: black;
 }
 
 .topnav a.coinreco {
-  color: white;
+  color: rgb(34, 155, 44);
+  font-size: 30px;
 }
-
 .topnav .icon {
   display: none;
-}
-.coinreco {
-  font-size: 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -38,8 +36,8 @@ body {
     float: right;
     display: block;
   }
-  .coinreco {
-    font-size: 25px;
+  .topnav a.coinreco {
+    font-size: 30px;
   }
 }
 
@@ -123,51 +121,34 @@ body {
 }
 .contains-three {
   background-image: linear-gradient(rgb(240, 252, 241), rgb(226, 243, 241));
-  margin: 20px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
   border-radius: 15px;
 }
-.b-and-e {
+.all-option {
   display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
-.b-and-e p {
-  padding: 5px 45px 5px 45px;
+.buy,
+.earn,
+.exchange,
+.Borrow,
+.card {
   border: 1px solid gray;
-  border-radius: 15px;
-  margin-left: 20px;
-  opacity: 0.9;
-}
-.other {
-  margin-bottom: 20px;
-}
-.other .exchange {
   opacity: 0.8;
   text-align: center;
-  padding: 5px;
-  margin-bottom: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
-  border: 1px solid gray;
-  border-radius: 15px;
-}
-.other .Borrow {
-  opacity: 0.8;
-  text-align: center;
-  padding: 5px;
-  margin-bottom: 10px;
-  margin-left: 110px;
-  margin-right: 110px;
-  border: 1px solid gray;
-  border-radius: 15px;
-}
-.other .card {
-  opacity: 0.8;
-  text-align: center;
-  padding: 5px;
-  margin-left: 115px;
-  margin-right: 115px;
-  border: 1px solid gray;
-  border-radius: 15px;
+  border-radius: 17px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-right: 1.1rem;
+  padding-left: 1.1rem;
 }
 .three-text h3 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -176,9 +157,19 @@ body {
   font-size: 20px;
   margin-top: 70px;
   text-align: center;
+  opacity: 0.8;
 }
 .three-text h4 {
   text-align: center;
   opacity: 0.8;
-  word-spacing: 2px;
+  word-spacing: 1px;
+  color: black;
+  opacity: 0.6;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+.btn-two {
+  margin-top: 2rem;
+  background-color: red;
+  text-align: center;
 }
