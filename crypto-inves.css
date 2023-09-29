@@ -15,10 +15,15 @@ body {
   padding: 14px 16px;
   text-align: center;
 }
-.topnav a:hover:not(:first-child) {
+/* .topnav a:hover:not(:first-child) {
   background-color: #ddd;
   color: black;
 }
+.topnav a:hover:not(:nth-child(3)) {
+  background-color: #ddd;
+  color: black;
+} */
+
 
 .topnav a.coinreco {
   color: rgb(34, 155, 44);
