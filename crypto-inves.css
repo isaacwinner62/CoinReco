@@ -88,7 +88,12 @@ body {
   font-weight: 900;
   border-radius: 12px;
   background-color: green;
+  text-decoration: none;
   margin-bottom: 50px;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
 }
 .img-one {
   margin-left: -10px;

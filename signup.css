@@ -15,7 +15,7 @@ form .inputt {
   width: 16rem;
 }
 ul li {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   opacity: 0.6;
 }
 #checkboxx {
@@ -25,7 +25,7 @@ ul li {
 .terms {
   opacity: 0.8;
   margin-left: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .terms span {
   color: blue;

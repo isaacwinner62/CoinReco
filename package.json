@@ -1,0 +1,19 @@
+{
+  "name": "coinreco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "back-end.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacwinner62/CoinReco.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaacwinner62/CoinReco/issues"
+  },
+  "homepage": "https://github.com/isaacwinner62/CoinReco#readme"
+}
