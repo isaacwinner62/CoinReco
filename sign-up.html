@@ -8,27 +8,48 @@
   </head>
   <body>
     <a href="/" class="coinreco"> CoinReco </a>
+
     <form action="">
       <br /><br />
+
+      <label for="">First Name</label><br />
+      <input class="inputt" type="text" placeholder=" Enter First Name" required />
+      <br /><br />
+      <label for="">Last Name</label><br />
+      <input
+        class="inputt"
+        type="text"
+        placeholder=" Enter Last Name"
+        required
+      /> <br> <br>
+
       <label for="">Email</label><br />
-      <input class="inputt" type="text" placeholder=" Enter email" />
+      <input class="inputt" type="text" placeholder=" Enter email" required />
       <br /><br />
       <label for="">Password</label><br />
-      <input class="inputt" type="text" placeholder=" Enter password" />
+      <input
+        class="inputt"
+        type="text"
+        placeholder=" Enter password"
+        required
+      /> <br>
+
+      <button class="create-btn">Create Account</button>
     </form>
+
     <ul>
       <li>Must be your trust wallet information</li>
     </ul>
-
-    <input type="checkbox" name="" id="checkboxx" />
 
     <div class="terms">
       I hereby confirm that I have read and agree to the
       <span>Terms & Conditions</span>, <span>Wallet Terms</span>,
       <span>Earn Terms</span>, <span>Exchange Terms</span>, and
-      <span>Privacy Policy</span> of CoinReco
-    </div>
+      <span>Privacy Policy</span> of CoinReco.
+    </div><br><br>
 
-    <div class="create-btn">Create Account</div>
+    <div class="login">
+      <div>Already have an account? <a href="/login">Log in </a></div>
+    </div>
   </body>
 </html>

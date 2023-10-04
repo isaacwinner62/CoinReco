@@ -193,6 +193,10 @@ body {
   border-radius: 12px;
   background-color: green;
 }
+.btn-two a {
+  text-decoration: none;
+  color: white;
+}
 .credible-section {
   display: flex;
   flex-wrap: wrap;
@@ -262,6 +266,10 @@ body {
   margin-top: 35px;
   cursor: pointer;
 }
+.trade-link a {
+  text-decoration: none;
+  color: white;
+}
 .pro-img {
   display: flex;
   justify-content: center;
@@ -290,4 +298,13 @@ body {
   margin-top: 50px;
   color: white;
   opacity: 0.8;
+}
+
+/* for big screens */
+
+@media screen and (min-width: 610px) {
+  .topnav a.coinreco {
+    color: white;
+    font-size: 30px;
+  }
 }

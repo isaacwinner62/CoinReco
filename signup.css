@@ -1,3 +1,8 @@
+.coinreco {
+  color: rgb(34, 155, 44);
+  font-size: 30px;
+  text-decoration: none;
+}
 form label {
   color: rgb(49, 49, 85);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -41,4 +46,10 @@ ul li {
   margin-left: 2rem;
   margin-right: 2rem;
   padding: 1rem 2rem;
+  cursor: pointer;
+}
+.login div {
+  font-size: 20px;
+  margin-left: 20px;
+  padding-bottom: 10px;
 }

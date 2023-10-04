@@ -1,36 +1,41 @@
-// const http = require("http");
-// const fs = require("fs");
+const http = require("http");
+const fs = require("fs");
 
-// const server = http.createServer((req, res) => {
-//   console.log(req.url, req.method);
-//   res.setHeader("Content-Type", "text/html");
- 
+const hostname = "0.0.0.0";
+const port = 3000;
 
-//   let path = "./";
-//   switch (req.url) {
-//     case "/":
-//       path += "crypto-inves.html";
-//       break;
-//     case "/sign-up":
-//       path += "sign-up.html";
-//       break;
-//     default:
-//       path += "crypto-inves.html";
-//       break;
-//   }
+const server = http.createServer((req, res) => {
+  //   console.log(req.url, req.method);
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "text/html");
 
-//   fs.readFile(path, (err, data) => {
-//     if (err) {
-//       console.log(err);
-//       res.end();
-//     } else {
-//       res.write(data);
-//       res.end();
-//     }
-//   });
-// });
+  let path = "./";
+  switch (req.url) {
+    case "/":
+      path += "crypto-inves.html";
+      break;
+    case "/sign-up":
+      path += "sign-up.html";
+      break;
+    case "/login":
+      path += "login.html";
+      break;
+    default:
+      path += "crypto-inves.html";
+      break;
+  }
 
-// server.listen(3000, "localhost", () => {
-//   console.log("listing for request on port 3000");
-  
-// });
+  fs.readFile(path, (err, data) => {
+    if (err) {
+      console.log(err);
+      res.end();
+    } else {
+      res.write(data);
+      res.end();
+    }
+  });
+});
+
+server.listen(port, hostname, () => {
+  console.log(`server is running at http://${hostname}:${port}`);
+});
