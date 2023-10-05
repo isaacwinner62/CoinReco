@@ -12,9 +12,9 @@ const server = http.createServer((req, res) => {
   let filePath = "./index.html"; // Default to index.html
   const url = req.url;
 
-  if (url === "/sign-up") {
+  if (url === "/sign-up.html") {
     filePath = "./sign-up.html";
-  } else if (url === "/login") {
+  } else if (url === "/login.html") {
     filePath = "./login.html";
   }
 
