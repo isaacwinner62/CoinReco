@@ -1,0 +1,7 @@
+[build]
+  command = "node server.js"
+  publish = "/"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"

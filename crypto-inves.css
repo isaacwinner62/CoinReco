@@ -163,6 +163,8 @@ body {
   padding-bottom: 0.3rem;
   padding-right: 1.1rem;
   padding-left: 1.1rem;
+  order: 1;
+  flex-grow: 1;
 }
 .three-text h3 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -302,9 +304,35 @@ body {
 
 /* for big screens */
 
-@media screen and (min-width: 610px) {
+@media screen and (min-width: 730px) {
   .topnav a.coinreco {
-    color: white;
-    font-size: 30px;
+    font-size: 50px;
+    margin-right: 8rem;
+  }
+  .tt {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-right: 40px;
+  }
+  .img-one {
+    margin-top: -300px;
+    max-width: 290px;
+    border-top-left-radius: 49px;
+    border-top-right-radius: 49px;
+  }
+  .section-two {
+    display: flex;
+    margin-left: -10px;
+    letter-spacing: 1.3px;
+    font-family: "Arial Narrow Bold", sans-serif;
+    font-weight: 500;
+  }
+  .slider-exchange {
+    margin-left: 26rem;
+  }
+  .credible-section {
+    display: bloc;
+    margin-left: 30px;
   }
 }
