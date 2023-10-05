@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
   let path = "./";
   switch (req.url) {
     case "/":
-      path += "crypto-inves.html";
+      path += "index.html";
       break;
     case "/sign-up":
       path += "sign-up.html";
@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
       path += "login.html";
       break;
     default:
-      path += "crypto-inves.html";
+      path += "index.html";
       break;
   }
 
