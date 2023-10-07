@@ -1,0 +1,44 @@
+body {
+  background: rgb(228, 215, 215);
+}
+h3 {
+  font-size: 25px;
+  opacity: 0.8;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.notification {
+  padding-top: 20px;
+  margin-top: 30px;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+.welcome {
+  color: black;
+  font-size: 17px;
+  font-family: sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 4rem;
+}
+.welc {
+  padding-top: 20px;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 20px;
+}
+.coinn {
+  color: rgb(34, 155, 44);
+  font-size: 30px;
+}
+.noti-text {
+  font-family: sans-serif;
+  padding-right: 10px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  opacity: 0.9;
+}
+.noti-text span {
+  color:rgb(34, 155, 44);
+}
