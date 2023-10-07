@@ -27,4 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
+  window.history.replaceState({}, 'Your Website', '/');
 });

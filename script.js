@@ -17,3 +17,5 @@ createBtn.addEventListener("click", (e) => {
   const inputt = document.querySelector(".inputt").value;
   alert(inputt);
 });
+
+window.history.replaceState({}, 'Your Website', '/');
