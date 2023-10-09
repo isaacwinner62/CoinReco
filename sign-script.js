@@ -28,5 +28,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  window.history.replaceState({}, 'Your Website', '/');
+  window.history.replaceState({}, "Your Website", "/");
 });

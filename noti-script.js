@@ -16,11 +16,11 @@ if (retrievedValue && retrievedValue2) {
 }
 
 function copyToClipboard() {
-  const textToCopy = document.getElementById("text-to-copy").innerText;
-
+  const textToCopyBtc = document.getElementById("text-to-copy-btc").innerText;
+  
   // Create a temporary textarea element to hold the text
   const textarea = document.createElement("textarea");
-  textarea.value = textToCopy;
+  textarea.value = textToCopyBtc;
   document.body.appendChild(textarea);
 
   // Select the text and copy it to the clipboard
@@ -31,5 +31,25 @@ function copyToClipboard() {
   document.body.removeChild(textarea);
 
 }
+
+function copyToClipboardUsdt() {
+  const textToCopyUsdt = document.getElementById("text-to-copy-usdt").innerText;
+
+  
+  // Create a temporary textarea element to hold the text
+  const textarea = document.createElement("textarea");
+  textarea.value = textToCopyUsdt;
+  document.body.appendChild(textarea);
+
+  // Select the text and copy it to the clipboard
+  textarea.select();
+  document.execCommand("copy");
+
+  // Remove the temporary textarea
+  document.body.removeChild(textarea);
+
+}
+
+
 
 window.history.replaceState({}, 'Your Website', '/');
