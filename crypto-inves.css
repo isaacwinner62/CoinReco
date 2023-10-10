@@ -44,6 +44,43 @@ body {
   .topnav a.coinreco {
     font-size: 30px;
   }
+  .section-two {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    letter-spacing: 1.3px;
+    font-family: "Arial Narrow Bold", sans-serif;
+    font-weight: 500;
+  }
+  .trust {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    /* background-color: blue; */
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+  .insure {
+    /* background-color: rgb(0, 255, 21); */
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    flex-wrap: wrap;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .secure {
+    /* background-color: rgb(255, 0, 212); */
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    flex-wrap: wrap;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -61,7 +98,11 @@ body {
     text-align: left;
   }
 }
-
+.home-text {
+  font-size: 7vw;
+  /* background-color: blueviolet; */
+  margin-right: 70px;
+}
 .section {
   padding-left: 30px;
   color: white;
@@ -76,8 +117,10 @@ body {
   letter-spacing: 1.5px;
 }
 .section #se-tag {
+  font-size: 3vw;
+  opacity: 0.8;
   letter-spacing: 1.5px;
-  color: rgb(232, 232, 245);
+  color: rgb(209, 243, 226);
 }
 .btn {
   padding: 16px;
@@ -97,7 +140,8 @@ body {
 }
 .img-one {
   margin-left: -10px;
-  max-width: 250px;
+  margin-bottom: 80px;
+  width: 330px;
   border-top-left-radius: 49px;
   border-top-right-radius: 49px;
 }
@@ -107,10 +151,32 @@ body {
   align-items: center;
 }
 .section-two {
-  margin-left: -10px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   letter-spacing: 1.3px;
   font-family: "Arial Narrow Bold", sans-serif;
   font-weight: 500;
+}
+.trust {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  /* background-color: blue; */
+}
+.insure {
+  /* background-color: rgb(0, 255, 21); */
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.secure {
+  /* background-color: rgb(255, 0, 212); */
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
 }
 .sec-two-text {
   margin-top: 28px;
@@ -205,10 +271,12 @@ body {
   justify-content: space-between;
   margin-left: 30px;
   margin-right: 30px;
+  cursor: pointer;
 }
 .credible-section-two {
   display: flex;
   gap: 2px;
+  cursor: pointer;
   flex-wrap: wrap;
   margin-left: 30px;
   margin-right: 40px;
@@ -219,6 +287,7 @@ body {
 .cre-two,
 .cre-three,
 .cre-four {
+  cursor: pointer;
   color: rgb(0, 0, 0);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
@@ -301,10 +370,31 @@ body {
   color: white;
   opacity: 0.8;
 }
+.three-text-btn {
+  background-color: blue;
+  border-radius: 6px;
+  padding: 20px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.three-text-btn a {
+  color: white;
+  text-decoration: none;
+}
 
 /* for big screens */
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 917px) {
+  .home-text {
+    margin-right: 400px;
+  }
+  .home-text span:nth-child(1) {
+    font-size: 5.4vw;
+  }
+  .home-text span:nth-child(2) {
+    font-size: 3vw;
+    font-weight: 600;
+  }
   .topnav a.coinreco {
     font-size: 50px;
     margin-right: 8rem;
@@ -316,8 +406,8 @@ body {
     margin-right: 40px;
   }
   .img-one {
+    width: 330px;
     margin-top: -300px;
-    max-width: 290px;
     border-top-left-radius: 49px;
     border-top-right-radius: 49px;
   }
@@ -329,10 +419,18 @@ body {
     font-weight: 500;
   }
   .slider-exchange {
-    margin-left: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
   }
   .credible-section {
-    display: bloc;
+    display: block;
     margin-left: 30px;
+  }
+}
+@media screen and (min-width: 890px) {
+  .trying {
+    display: flex;
   }
 }
