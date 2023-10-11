@@ -45,6 +45,7 @@ body {
     font-size: 30px;
   }
   .img-one {
+    overflow: hidden;
     margin-left: -10px;
     margin-bottom: 80px;
     width: 260px;
