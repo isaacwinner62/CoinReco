@@ -1,4 +1,9 @@
+.all-body {
+  text-align: left;
+}
 .coinreco {
+  margin: 30px;
+  padding-top: 20px;
   color: rgb(34, 155, 44);
   font-size: 30px;
   text-decoration: none;
@@ -59,5 +64,14 @@ ul li {
   color: rgb(255, 0, 0);
   font-weight: 600;
   letter-spacing: 2px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+@media screen and (min-width: 917px) {
+  body {
+    background-color: black;
+  }
+  .all-body {
+    margin: 0 600px 0 300px;
+    background-color: aliceblue;
+  }
 }

@@ -3,8 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
     <style>
+      @media screen and (min-width: 917px) {
+        body {
+          background-color: black;
+        }
+        .body {
+          margin: 0 700px 0 200px;
+          background-color: aliceblue;
+          border-radius: 4px;
+        }
+      }
       .coinreco {
         color: rgb(34, 155, 44);
         font-size: 30px;
@@ -47,39 +57,41 @@
     </style>
   </head>
   <body>
-    <a href="/" class="coinreco"> CoinReco </a><br />
-    <br />
-
-    <form action="">
-      <label for="">Email</label><br />
-
-      <input
-        class="inputt"
-        type="text"
-        placeholder=" Enter email"
-        required
-        style="padding-left: 10px"
-      />
-
-      <br /><br />
-
-      <label for="">Password</label><br />
-
-      <input
-        class="inputt"
-        type="text"
-        placeholder=" Enter password"
-        required
-        style="padding-left: 10px"
-      />
+    <div class="body">
+      <a href="/" class="coinreco"> CoinReco </a><br />
       <br />
 
-      <button class="create-btn">Log in</button>
-    </form>
-    <br /><br />
+      <form action="">
+        <label for="">Email</label><br />
 
-    <div class="login">
-      <div>Don't have an account? <a href="/sign-up.html">Sign Up </a></div>
+        <input
+          class="inputt"
+          type="text"
+          placeholder=" Enter email"
+          required
+          style="padding-left: 10px"
+        />
+
+        <br /><br />
+
+        <label for="">Password</label><br />
+
+        <input
+          class="inputt"
+          type="text"
+          placeholder=" Enter password"
+          required
+          style="padding-left: 10px"
+        />
+        <br />
+
+        <button class="create-btn">Log in</button>
+      </form>
+      <br /><br />
+
+      <div class="login">
+        <div>Don't have an account? <a href="/sign-up.html">Sign Up </a></div>
+      </div>
     </div>
   </body>
 </html>
