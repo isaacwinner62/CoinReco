@@ -404,7 +404,7 @@ body {
   .img-one {
     overflow: hidden;
     margin-left: -10px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     width: 260px;
     border-top-left-radius: 49px;
     border-top-right-radius: 49px;
@@ -412,7 +412,6 @@ body {
   .section-two {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
     /* margin-left: 100px;
     margin-right: 100px; */
     letter-spacing: 1.3px;
@@ -424,12 +423,12 @@ body {
     text-align: center;
     flex-wrap: wrap;
     font-size: 20px;
-    background-color: blue;
-    margin-right: 60px;
-    margin-left: 30px;
+    /* background-color: blue; */
+    margin-right: 30px;
+    margin-left: px;
   }
   .insure {
-    background-color: rgb(0, 255, 21);
+    /* background-color: rgb(0, 255, 21); */
     display: flex;
     text-align: center;
     font-size: 20px;
@@ -438,7 +437,7 @@ body {
     margin-left: 0px;
   }
   .secure {
-    background-color: rgb(255, 0, 212);
+    /* background-color: rgb(255, 0, 212); */
     display: flex;
     text-align: center;
     font-size: 20px;
