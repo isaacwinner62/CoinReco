@@ -44,6 +44,13 @@ body {
   .topnav a.coinreco {
     font-size: 30px;
   }
+  .img-one {
+    margin-left: -10px;
+    margin-bottom: 80px;
+    width: 300px;
+    border-top-left-radius: 49px;
+    border-top-right-radius: 49px;
+  }
   .section-two {
     display: flex;
     flex-wrap: wrap;
