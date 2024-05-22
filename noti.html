@@ -3,21 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="noti-style.css" />
+    <link rel="stylesheet" href="crypto-inves.css">
     <title>Notification</title>
   </head>
   <body>
+
+    <div class="topnav" id="myTopnav">
+      <a href="/" class="coinreco"> CoinReco </a>
+
+      <a href="/sign-up.html">Market</a>
+      <a href="/sign-up.html">Products</a>
+      <a href="/sign-up.html">Corporates</a>
+      <a href="/sign-up.html">Private Clients</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
     <div class="head">
       <div class="notification">
-        <h3>Successfully signed in</h3>
-        <span class="welcome">Welcome To</span>
-        <span class="coinn"> CoinReco</span><br />
-
-        <div class="welc">
-          <span>Hi</span>
-          <span id="display-value"></span>
-          <span id="display-value2"></span>
+        <div class="profile">
+          <div class="photo"></div>
+          <div class="name-text">Dear, <span id="display-value"></span>
+            <span id="display-value2"></span>  Let's make payment <div>Welcome to COINRECO</div></div>
         </div>
+     
+
 
         <div class="noti-text">
           <p>
@@ -28,25 +46,30 @@
             To proceed, please fund and activate your account with a minimum of
             $100.
           </p>
+
+          <p class="copy-btc">* copy the Bitcoin address below.</p>
+          <div class="addres" id="text-to-copy-btc">
+            bc1qlar0w85c9ftfe3ry8kgy4cjx6truv6303y0a9t
+          </div>
+          <br />
+          <button onclick="copyToClipboard()">COPY BTC ADDRESS</button> <br /><br />
+  
+          <p class="copy-btc">* copy the USDT address below.</p>
+          <div class="addres" id="text-to-copy-usdt">
+            0xc0443F0F03BB908fc1b654DfAE05D94bf19368A2
+          </div>
+          <br />
+          <button onclick="copyToClipboardUsdt()">COPY USDT ADDRESS</button> <br /><br />
+
+
           <p>
             This deposit will be your first investment plan, and you will start
             making profit returns on your investment immediately.
           </p>
         </div>
 
-        <p class="copy-btc">* copy the Bitcoin address below.</p>
-        <div class="addres" id="text-to-copy-btc">
-          bc1qss5gqq23zwrq35k4x3azy64lrk3zyfwmrnwxjr
-        </div>
-        <br />
-        <button onclick="copyToClipboard()">COPY BTC ADDRESS</button> <br /><br />
+        <button class="activebtn">Make deposit to activate <i class="fa fa-arrow-circle-o-right"></i> </button>
 
-        <p class="copy-btc">* copy the USDT address below.</p>
-        <div class="addres" id="text-to-copy-usdt">
-          TGr5WcLgc7eY93uFAwx4trx2iYaFV68JdU
-        </div>
-        <br />
-        <button onclick="copyToClipboardUsdt()">COPY USDT ADDRESS</button> <br /><br />
 
         <div class="end-text">
           copy the above BITCOIN or USDT address, paste it on any wallet of your choice,
